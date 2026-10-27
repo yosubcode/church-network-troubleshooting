@@ -22,7 +22,7 @@ The network had grown over time, with routers added wherever coverage was needed
 | TP-Link Archer BE800 | Wi-Fi router added for coverage |
 | TP-Link Archer C9 | Older Wi-Fi router added for coverage |
 | ASUS RT-AC86U | Wi-Fi router added for coverage |
-| Cisco Aironet APs | Ceiling-mounted, older installation, separate SSID |
+| Cisco Aironet AP | Ceiling-mounted, older installation, separate SSID |
 | Printers | Several office printers and one commercial printer |
 | AV equipment | Dante audio-over-IP devices (identified later in the capture) |
 
