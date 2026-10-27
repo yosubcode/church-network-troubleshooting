@@ -69,6 +69,6 @@ The older Archer C9 firmware had no operation-mode setting, so it was converted 
 | 192.168.1.x (DHCP) | TP-Link Archer BE800 | Access point |
 | 192.168.1.x (DHCP) | ASUS RT-AC86U | Access point |
 | 192.168.1.251 (static) | TP-Link Archer C9 | Access point (manual) |
-| 192.168.1.x | Cisco Aironet ceiling APs | Legacy APs, separate SSID, left in place (see [Open Items](06-open-items.md)) |
+| 192.168.1.x | Cisco Aironet ceiling AP | Legacy AP, separate SSID, left in place (see [Open Items](06-open-items.md)) |
 
 Next: getting the uplinks to actually pass traffic → [Physical-layer troubleshooting](04-physical-layer.md).
