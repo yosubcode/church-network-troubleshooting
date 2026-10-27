@@ -63,7 +63,6 @@ flowchart TD
 | 4 | [Physical-layer troubleshooting](docs/04-physical-layer.md) | Narrowing a link failure with `ping` / `ipconfig`; port negotiation fix |
 | 5 | [Verification](docs/05-verification.md) | Follow-up capture confirming the fix |
 | 6 | [Open items & recommendations](docs/06-open-items.md) | Legacy Cisco APs, WPA2-only mode, subnet sizing, multicast cleanup |
-| 7 | [Lessons learned](docs/07-lessons-learned.md) | What I would do differently |
 
 ---
 
