@@ -10,7 +10,7 @@ The immediate problem is fixed and [verified](05-verification.md). This page rec
 |---|---|---|---|---|
 | 1 | Static IP .251 may sit inside the DHCP pool | Future IP conflict | Low | **High** |
 | 2 | Archer C9 allows legacy WPA (TKIP) | Weaker Wi-Fi encryption | Low | **High** |
-| 3 | Legacy Cisco APs are unmanaged | Unknown security state, separate SSID | Medium | **High** |
+| 3 | Legacy Cisco AP is unmanaged | Unknown security state, separate SSID | Medium | **High** |
 | 4 | Staff, guests, and AV equipment share one flat network | No isolation between trust levels | Medium | Medium |
 | 5 | One shared Wi-Fi password for everyone | Hard to revoke access | Low | Medium |
 | 6 | Multicast / SSDP noise | Performance | Low | Low |
@@ -30,20 +30,20 @@ The C9 is set to **WPA/WPA2-Personal**, which still allows the original WPA with
 
 **Recommendation:** change the C9's security mode to **WPA2-Personal (AES)** on both bands. The C9 is also an older model without fast-roaming support; when budget allows, replacing it with an AP that supports WPA3 would remove this item entirely.
 
-## 3. Bring the Cisco ceiling APs under management, or remove them
+## 3. Bring the Cisco ceiling AP under management, or remove it
 
-Cisco Aironet APs mounted on the ceiling still broadcast their **own separate SSID**. I identified them in the main router's device list by their MAC prefixes (Cisco OUI) and tried to reach them, but they expose no web interface. That behavior is typical of **lightweight (controller-based) APs**, which take their configuration from a wireless LAN controller, or of units configured for console/CLI access only.
+A Cisco Aironet AP mounted on the ceiling still broadcasts its **own separate SSID**. I identified it in the main router's device list by its MAC prefix (Cisco OUI) and tried to reach it, but it exposes no web interface. That behavior is typical of a **lightweight (controller-based) AP**, which takes its configuration from a wireless LAN controller, or of a unit configured for console/CLI access only.
 
 Why this matters from a security standpoint:
 
-- Nobody currently on site can see or change their configuration, encryption settings, or firmware version.
-- They are active devices on the main LAN that no one is managing.
-- Their separate SSID also prevents roaming with the rest of the network.
+- Nobody currently on site can see or change its configuration, encryption settings, or firmware version.
+- It is an active device on the main LAN that no one is managing.
+- Its separate SSID also prevents roaming with the rest of the network.
 
 **Recommendation:**
-1. Ask whether the church ever had a Cisco wireless controller or an outside vendor managing these APs.
-2. If not, either factory-reset them and configure them directly through the console port, or **unplug them**, after confirming the new APs cover the same areas.
-3. Until then, list them in the network inventory as unmanaged devices.
+1. Ask whether the church ever had a Cisco wireless controller or an outside vendor managing this AP.
+2. If not, either factory-reset it and configure it directly through the console port, or **unplug it**, after confirming the new APs cover the same area.
+3. Until then, list it in the network inventory as an unmanaged device.
 
 ## 4. Separate guests, staff, and AV equipment
 
